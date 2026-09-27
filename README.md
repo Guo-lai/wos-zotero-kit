@@ -82,3 +82,7 @@ wos_zotero_kit/zotero_import.py 查重、建条目、加集合、回读核对（
 tests/                       离线测试：python -m unittest discover
 SKILL.md                     给 AI 助手用的操作说明
 ```
+
+## 许可证
+
+MIT，见 `LICENSE`。
