@@ -1,0 +1,4 @@
+playwright>=1.51
+httpx>=0.27
+# 可选：装了会自动使用，降低被识别为自动化的概率
+# cloakbrowser
