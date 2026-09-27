@@ -62,6 +62,8 @@ def main() -> int:
     args = parser.parse_args()
 
     logging.basicConfig(level=logging.INFO, format="  %(name)s: %(message)s", stream=sys.stderr)
+    # httpx 每个请求一行 INFO，入库查重时会刷几百行
+    logging.getLogger("httpx").setLevel(logging.WARNING)
 
     if not args.no_import and not args.collection:
         parser.error("入库需要 --collection；只导出请加 --no-import")
